@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fictoria | Porte monnaie</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+  />
+  <link rel="icon" href="images/logo2.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <style>
+    .input-group{
+      width: 100%;
+    }
+    a{
+      color: white;
+      text-decoration: none;
+    } a:hover{
+      color: white;
+      text-decoration: none;
+    }
+
+  </style>
+  <link rel="icon" href="images/logo2.png">
+  <script type= "text/javascript" src = "countries.js"></script>
+  </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top p-3" style="background-color: white; box-shadow: 5px 0px 10px -5px gray;"  >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/logo3.png" width="150px" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <form class="nav-item" action="index.html" id="form">
+                <a onclick="submitForm()" class="nav-link" aria-current="page" >Acceuil</a>
+              </form>
+              <script>
+                function submitForm(){
+                    var form = document.getElementById("form");
+                    form.submit();
+                }
+                </script>
+              <form class="nav-item" action="contact.html" id="form1">
+                <a onclick="submitForm1()" class="nav-link" aria-current="page" >Contactez-nous</a>
+              </form>
+              <script>
+                function submitForm1(){
+                    var form = document.getElementById("form1");
+                    form.submit();
+                }
+                </script>
+            <form class="nav-item" action="walet.html" id="form2">
+              <a onclick="submitForm2()" class="nav-link active" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg> Porte monnaie
+              </a>
+            </form>
+            <script>
+              function submitForm2(){
+                  var form = document.getElementById("form2");
+                  form.submit();
+              }
+              </script>
+          </div>
+        </div>
+      </nav>
+      <br>
+      <br>
+      <br>
+      
+      
+    
+       
+<div align="center">
+<div align="left" class="page">
+  <div id="main" class="mt-2"></div>
+  <br>
+    <form
+    action="https://formspree.io/f/xnqwrydw"
+    method="POST"
+    id="my-form"
+  >
+  <div class="d-none">
+  <h1 style="font-size: 40px;margin: 10px;">
+    Products
+  </h1>
+  <br>
+  <br>
+     <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">Products</span>
+      <textarea type="text" required name="Products" class="form-control" placeholder="Products" aria-label="Products" aria-describedby="basic-addon1"></textarea>
+    </div>
+    <br>
+  </div>
+    <h1 style="font-size: 30px;margin: 10px;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#6a759b" class="bi bi-envelope-paper-fill mb-2 d-inline-block" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M6.5 9.5 3 7.5v-6A1.5 1.5 0 0 1 4.5 0h7A1.5 1.5 0 0 1 13 1.5v6l-3.5 2L8 8.75l-1.5.75ZM1.059 3.635 2 3.133v3.753L0 5.713V5.4a2 2 0 0 1 1.059-1.765ZM16 5.713l-2 1.173V3.133l.941.502A2 2 0 0 1 16 5.4v.313Zm0 1.16-5.693 3.337L16 13.372v-6.5Zm-8 3.199 7.941 4.412A2 2 0 0 1 14 16H2a2 2 0 0 1-1.941-1.516L8 10.072Zm-8 3.3 5.693-3.162L0 6.873v6.5Z"/>
+      </svg>
+       <div style="transform: translateX(8%);" class=" d-inline-block">Email et prenom</div>
+    </h1>
+    <br>
+    <br>
+       <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Email</span>
+        <input type="text" required name="Email" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Prenom</span>
+        <input type="text" required name="Prenom" class="form-control" placeholder="Prenom" aria-label="Prenom" aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Nom</span>
+        <input type="text" required name="Nom" class="form-control" placeholder="Nom" aria-label="Nom" aria-describedby="basic-addon1">
+      </div>
+      <br>
+
+
+      <h1 style="font-size: 30px;margin:10px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#6a759b" class="bi bi-telephone-fill mb-2 d-inline-block" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+        </svg>
+        <div style="transform: translateX(8%);" class=" d-inline-block">N° telephone</div>
+      </h1>
+      <br>
+      <br>
+         <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">Tele 1</span>
+          <input type="tel" required name="phone1" id="phone" class="form-control" placeholder="phone1" aria-label="phone1" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3 w-100">
+          <span class="input-group-text" id="basic-addon1">Tele 2</span>
+          <input type="tel" name="phone2" id="phone1" class="form-control" placeholder="phone2" aria-label="phone2" aria-describedby="basic-addon1">
+        </div>
+        <br>
+
+
+
+    <h1 style="font-size: 30px; margin: 10px;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#6a759b" class="bi bi-geo-alt-fill mb-2 d-inline-block" viewBox="0 0 16 16">
+        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+      </svg>
+      <div style="transform: translateX(8%);" class=" d-inline-block">Ton Adress</div>
+    </label>
+    <br>
+    <br>
+    <select onchange="print_state('state',this.selectedIndex);" id="country" name ="country" class="form-select mb-3" required></select>
+    <select name ="state" id ="state" class="form-select mb-3" required></select>
+    <script language="javascript">print_country("country");</script>
+      <div class="input-group mb-3 w-100">
+        <span class="input-group-text" id="basic-addon1">Address 1</span>
+        <input type="text" required name="Adress Line 1" class="form-control" placeholder="Address Line 1" aria-label="Address Line 1" aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Address 2</span>
+        <input type="text" name="Adress Line 2" class="form-control" placeholder="Address Line 2" aria-label="Address Line 2" aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Code postale</span>
+        <input type="text" name="Zip code" class="form-control" placeholder="Code postale" aria-label="Address Line 2" aria-describedby="basic-addon1">
+      </div>
+    </div>
+    <br>
+    <br>
+    <button class="btn1 m-2" id="buy"  type="submit">Acheter</button>
+
+  </form>
+</div>
+
+
+  <div class="center" id="nothing">
+    <div align="center">
+      <svg xmlns="http://www.w3.org/2000/svg" width="136" height="136" fill="#6a759b" class="bi bi-bag-x-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zM6.854 8.146a.5.5 0 1 0-.708.708L7.293 10l-1.147 1.146a.5.5 0 0 0 .708.708L8 10.707l1.146 1.147a.5.5 0 0 0 .708-.708L8.707 10l1.147-1.146a.5.5 0 0 0-.708-.708L8 9.293 6.854 8.146z"/>
+      </svg>
+    </div>
+    <br><br><br><br>
+    <div align="center">
+      <h1>Rien dans le porte monnaie</h1>
+      <br><br>
+      <a href="index.html"><button class="btn1 ">Commencer à commander</button></a><br><br>
+      <a href="contact.html"><button class="btn11">Contacter-nous</button></a>
+    </div>
+  </div>
+
+      <br>
+      <br>
+      <br>
+      <p id="my-form-status"></p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div id="brs">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+      <!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted p-3">
+
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Porbet
+          </h6>
+          <p>
+            Porbet , a company that makes something out of nothing
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="https://cytocyber.github.io" class="text-reset">Cytocyber</a>
+          </p>
+          <p>
+            <a href="https://expense.github.io" class="text-reset">Expense</a>
+          </p>
+          <p>
+            <a href="https://porbet.github.io/store/todo.html" class="text-reset">Porbet keep</a>
+          </p>
+          <p>
+            <a href="https://porbet.github.io/store/keep.html" class="text-reset">Porbet todo</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="index.html" class="text-reset">Home</a>
+          </p>
+          <p>
+            <a href="https://porbet.github.io/store/" class="text-reset">Store</a>
+          </p>
+          <p>
+            <a href="contact.html" class="text-reset">Contact</a>
+          </p>
+          <p>
+            <a href="privacy.html" class="text-reset">Privacy</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contact
+          </h6>
+          <p><i class="fas fa-home me-3"></i> Nador, Morocco</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            porbet.contact@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 212 638 397 172</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4">
+    © 2022 Copyright:
+    <a class="text-reset fw-bold" href="http://opensource-porbet.ga/">opensource-porbet.ga</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+      <script>
+        const phoneInputField = document.querySelector("#phone");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+          preferredCountries: ["ma","dz"],
+          utilsScript:
+            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+
+        const phoneInputField1 = document.querySelector("#phone1");
+        const phoneInput1 = window.intlTelInput(phoneInputField1, {
+          preferredCountries: ["ma","dz"],
+          utilsScript:
+            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+      </script>
+      <script>
+          if(localStorage.getItem("walet") == "[]"){
+            document.getElementById("main").innerHTML = "";
+            document.getElementById("buy").style.display="none";
+            document.getElementById("my-form").style.display="none";
+            document.getElementById("nothing").style.display="block";
+            document.getElementById("bottom").style.display="block";
+            document.getElementById("brs").style.display="block";
+          } else{
+            document.getElementById("buy").style.display="inline-block";
+            document.getElementById("my-form").style.display="block";
+            document.getElementById("nothing").style.display="none";
+            
+            document.getElementById("brs").style.display="none";
+          }
+
+
+
+         
+
+
+    var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          window.location.href="thanks.html";
+          localStorage.setItem("walet","[]")
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              window.location.href="sorry.html";
+            }
+          })
+        }
+      }).catch(error => {
+        window.location.href="sorry.html";
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+
+
+    window.addEventListener("load",function(){
+      let walet = localStorage.getItem("walet");
+            if(walet == null){
+              waletObj = [];
+            } else{
+              waletObj = JSON.parse(walet);
+            }
+          let html = "";
+          waletObj.forEach(function(element,index) {
+            html += `
+              <div class="p-2" style="border-bottom:1px solid gray;">
+                <img src="${element.img}" width="100px" class="d-inline-block image p-2" style="border-radius:15px;" />
+                <div class="d-inline-block description" style="transform:translateY(30%);">
+                  <h3 class="valueTitle m-2" style="font-size:15px;  ">${element.product}</h3>
+                  <h3 class="valueTitle m-2" style="font-size:20px;"><strong class="price">${element.price * element.quantity}</strong> Dhs <span class="total_price d-none">${element.price * element.quantity}</span> </h3>
+                  <h3 class="valueTitle m-2" style="font-size:20px;">Quantité : <strong>${element.quantity}</strong></h3>
+                </div>
+                <br>
+                  <div class="m-3">
+                    <a id="${index}" onclick="deleteWalet(this.id)" class="btn2 p-2" style="border-radius:10px !important;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                        <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+                      </svg>
+                      Supprimer
+                    </a>
+                </div>
+              </div>
+              
+            `
+            document.getElementsByName("Products")[0].value += `${element.product}
+Quantity: ${element.quantity}
+Prix unitaire: ${element.price} Dhs
+Prix total: ${element.price * element.quantity} Dhs
+Description: ${element.description}
+      -----
+            `;
+
+          });
+
+          let waletElm = document.getElementById("main");
+          waletElm.innerHTML = html
+
+          var amount_sum = 0;
+          
+          $('.total_price').each(function(){
+
+                  amount_sum += Number(this.innerHTML);
+                  
+          });
+          waletElm.innerHTML += `
+            <div align="left" class="p-4" id="bottom" style="position:fixed;width:100%;background:white;bottom:0px;right:0;box-shadow:5px 0px 10px -5px gray;z-index:200">
+              <h2>Total : <strong>${amount_sum.toFixed(2)}</strong> Dhs</h2>
+            </div>
+          `;
+          document.getElementsByName("Products")[0].value += `
+Total : ${amount_sum.toFixed(2)} Dhs`
+           
+    })
+
+    function deleteWalet(index){
+          let confirmDel = confirm("Do you really want to delete?");
+
+          if(confirmDel){
+            let walet = localStorage.getItem("walet");
+            if(walet == null){
+              waletObj = [];
+              window.location.reload()
+            } else{
+              waletObj = JSON.parse(walet);
+              window.location.reload()
+            }
+            waletObj.splice(index , 1);
+            localStorage.setItem("walet", JSON.stringify(waletObj));
+            window.location.reload()
+          }
+        }
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

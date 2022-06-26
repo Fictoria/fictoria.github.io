@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fictoria | Shopping</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" href="images/logo2.png">
+    <style>
+a{
+  display: inline-block;
+}
+       
+    </style>
+    
+</head>
+<body class="bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white" style="box-shadow: 5px 0px 10px -5px gray;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/logo3.png" width="150px" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <form class="nav-item" action="index.html" id="form">
+                <a onclick="submitForm()" class="nav-link active" aria-current="page" >Acceuil</a>
+              </form>
+              <script>
+                function submitForm(){
+                    var form = document.getElementById("form");
+                    form.submit();
+                }
+                </script>
+              <form class="nav-item" action="contact.html" id="form1">
+                <a onclick="submitForm1()" class="nav-link" aria-current="page" >Contactez-nous</a>
+              </form>
+              <script>
+                function submitForm1(){
+                    var form = document.getElementById("form1");
+                    form.submit();
+                }
+                </script>
+            <form class="nav-item" action="walet.html" id="form2">
+              <a onclick="submitForm2()" class="nav-link" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg> Porte monnaie
+              </a>
+            </form>
+            <script>
+              function submitForm2(){
+                  var form = document.getElementById("form2");
+                  form.submit();
+              }
+              </script>
+            </ul>
+            <div class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Chercher" id="search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit"  onclick="myFunction()">Chercher</button>
+            </div>
+              
+          </div>
+        </div>
+        
+      </nav>
+     
+<div align="center">
+<div align="center" class="group2">
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <div style="margin-right: 10px;">  
+  
+    <a class="cathegorie text-decoration-none" href="masculine.html">
+      <img src="https://cdn-icons-png.flaticon.com/512/1720/1720759.png" class="icon"  />
+      <div style="margin-top: 15px; color: black; transform: translateX(-40%);">Masculine</div>
+      <br>
+    </a>
+    <a class="cathegorie-active text-decoration-none" href="femenine.html">
+      <img src="https://cdn-icons-png.flaticon.com/512/1596/1596157.png" class="icon" />
+      <div style="margin-top: 15px; color: black; transform: translateX(-30%);">Féminine</div>
+      <br>
+    </a>
+    <a class="cathegorie text-decoration-none" href="telephones.html">
+      <img src="https://www.iconpacks.net/icons/2/free-mobile-phone-icon-2636-thumb.png" class="icon"  />
+      <div style="margin-top: 15px; color: black;transform: translateX(-50%);">Téléphones</div>
+      <br>
+    </a>
+    <a class="cathegorie text-decoration-none" href="ordinateur.html">
+      <img src="https://findicons.com/files/icons/2807/metronome/512/computer.png" class="icon"  />
+      <div style="margin-top: 15px; color: black; transform: translateX(-45%);">Ordinateur</div>
+      <br>
+    </a>
+    <a class="cathegorie text-decoration-none" href="accessoires.html">
+      <img src="https://indiafad.com/storage/categories/icon/FCq1PdtVBgJwl2m3bPTQhvsTE5gBjTwLYL8QnxNb.png" class="icon"  />
+      <div style="margin-top: 15px; color: black; transform: translateX(-45%);">Accessories</div>
+      <br>
+    </a>
+    <a class="cathegorie text-decoration-none" href="sacs.html">
+      <img src="http://cdn.onlinewebfonts.com/svg/img_174666.png" class="icon" style="width: 30px;"  />
+      <div style="margin-top: 15px; color: black;">Sacs</div>
+      <br>
+    </a>
+    <a class="cathegorie text-decoration-none" href="beaute.html">
+      <img src="https://www.shareicon.net/data/256x256/2016/04/24/754828_beauty_512x512.png" class="icon"   />
+      <div style="margin-top: 15px; color: black; transform: translateX(-12%);">Beauté</div>
+      <br>
+    </a>
+    <a class="cathegorie text-decoration-none" href="sports.html">
+      <img src="http://cdn.onlinewebfonts.com/svg/img_571584.png" class="icon"   />
+      <div style="margin-top: 15px; color: black; transform: translateX(-10%);">Sports</div>
+      <br>
+    </a>
+  </div>
+  <br>
+  <br>
+    <div class="group" align="center">
+        <h1 class="m-3 title" style="font-size: 50px;font-weight: bold;">La mode féminine</h1>
+        <br>
+        <br>
+        <a href="product.html"   onclick="prod('images/Robe fleuri à encolure de cœur à nœud fendu/1.webp','images/Robe fleuri à encolure de cœur à nœud fendu/2.webp','images/Robe fleuri à encolure de cœur à nœud fendu/3.webp','images/Robe fleuri à encolure de cœur à nœud fendu/4.webp','images/Robe fleuri à encolure de cœur à nœud fendu/5.webp','Robe fleuri à encolure de cœur à nœud fendu','126.00','','7')"><div class="card m-2  res">
+          <div align="center">
+              <img src="images/Robe fleuri à encolure de cœur à nœud fendu/1.webp" style="width: 150px;" class="card-img-top"  />
+          </div>
+          <br>
+          <div class="card-body">
+          <h6 class="card-title" style="margin: -10px; color: gray;">Robe fleuri à encolure de cœur à nœud fendu</h6>
+          <br>
+          <div style="transform: translateY(-22%);">
+              <strong class="text-black" style="font-size: 20px; ">126.00 Dhs</strong><span style="color: red;font-size: 12px;"></span>
+          </div>
+          </div>
+      </div></a>
+
+
+      <a href="product.html"   onclick="prod('images/Robe moulante à ruché sans manches métallique/1.webp','images/Robe moulante à ruché sans manches métallique/2.webp','images/Robe moulante à ruché sans manches métallique/3.webp','images/Robe moulante à ruché sans manches métallique/4.webp','images/Robe moulante à ruché sans manches métallique/5.webp','Robe moulante à ruché sans manches métallique','112.00','','7')"><div class="card m-2  res">
+        <div align="center">
+            <img src="images/Robe moulante à ruché sans manches métallique/1.webp" style="width: 150px;" class="card-img-top"  />
+        </div>
+        <br>
+        <div class="card-body">
+        <h6 class="card-title" style="margin: -10px; color: gray;">Robe moulante à ruché sans manches métallique</h6>
+        <br>
+        <div style="transform: translateY(-22%);">
+            <strong class="text-black" style="font-size: 20px; ">112.00 Dhs</strong><span style="color: red;font-size: 12px;"></span>
+        </div>
+        </div>
+    </div></a>
+
+
+    <a href="product.html"   onclick="prod('images/T-shirt court à rayures/1.webp','images/T-shirt court à rayures/2.webp','images/T-shirt court à rayures/3.webp','images/T-shirt court à rayures/4.webp','images/T-shirt court à rayures/5.webp','T-shirt court à rayures','38.00','','7')"><div class="card m-2  res">
+      <div align="center">
+          <img src="images/T-shirt court à rayures/1.webp" style="width: 150px;" class="card-img-top"  />
+      </div>
+      <br>
+      <div class="card-body">
+      <h6 class="card-title" style="margin: -10px; color: gray;">T-shirt court à rayures</h6>
+      <br>
+      <div style="transform: translateY(-22%);">
+          <strong class="text-black" style="font-size: 20px; ">38.00 Dhs</strong><span style="color: red;font-size: 12px;"></span>
+      </div>
+      </div>
+  </div></a>
+
+
+  <a href="product.html"   onclick="prod('images/SXY T-shirt long à blocs de couleurs à lettres/1.webp','images/SXY T-shirt long à blocs de couleurs à lettres/2.webp','images/SXY T-shirt long à blocs de couleurs à lettres/3.webp','images/SXY T-shirt long à blocs de couleurs à lettres/4.webp','images/SXY T-shirt long à blocs de couleurs à lettres/5.webp','SXY T-shirt long à blocs de couleurs à lettres','123.00','','7')"><div class="card m-2  res">
+    <div align="center">
+        <img src="images/SXY T-shirt long à blocs de couleurs à lettres/1.webp" style="width: 150px;" class="card-img-top"  />
+    </div>
+    <br>
+    <div class="card-body">
+    <h6 class="card-title" style="margin: -10px; color: gray;">SXY T-shirt long à blocs de couleurs à lettres</h6>
+    <br>
+    <div style="transform: translateY(-22%);">
+        <strong class="text-black" style="font-size: 20px; ">123.00 Dhs</strong><span style="color: red;font-size: 12px;"></span>
+    </div>
+    </div>
+</div></a>
+                
+                 
+
+
+                 
+                    
+                  
+                  
+                  
+                
+                
+            
+        </div>
+
+    </div>
+</div>
+<br>
+<br>
+
+
+
+
+<br>
+
+     <script>
+         function prod(w,w2,w3,w4,w5,x,y,z){
+             localStorage.setItem("w",w)
+             localStorage.setItem("w2",w2)
+             localStorage.setItem("w3",w3)
+             localStorage.setItem("w4",w4)
+             localStorage.setItem("w5",w5)
+             localStorage.setItem("x",x)
+             localStorage.setItem("y",y)
+             localStorage.setItem("z",z)
+         }
+         function myFunction() {
+            var input = document.getElementById("search");
+            var filter = input.value.toLowerCase();
+            var nodes = document.getElementsByClassName('card');
+            if(input.value == ""){
+              window.location.reload()
+            } else {
+              console.log("searching")
+              document.getElementsByClassName("title")[0].style.display = "none";
+              for (i = 0; i < nodes.length; i++) {
+                if (nodes[i].innerText.toLowerCase().includes(filter)) {
+                  nodes[i].style.display = "block";
+                } else {
+                  nodes[i].style.display = "none";
+                }
+              }
+            }
+          }
+     </script>
+     
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted p-3">
+
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Porbet
+          </h6>
+          <p>
+            Porbet , a company that makes something out of nothing
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="https://cytocyber.github.io" class="text-reset">Cytocyber</a>
+          </p>
+          <p>
+            <a href="https://expense.github.io" class="text-reset">Expense</a>
+          </p>
+          <p>
+            <a href="https://porbet.github.io/store/todo.html" class="text-reset">Porbet keep</a>
+          </p>
+          <p>
+            <a href="https://porbet.github.io/store/keep.html" class="text-reset">Porbet todo</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="index.html" class="text-reset">Home</a>
+          </p>
+          <p>
+            <a href="https://porbet.github.io/store/" class="text-reset">Store</a>
+          </p>
+          <p>
+            <a href="contact.html" class="text-reset">Contact</a>
+          </p>
+          <p>
+            <a href="privacy.html" class="text-reset">Privacy</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contact
+          </h6>
+          <p><i class="fas fa-home me-3"></i> Nador, Morocco</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            porbet.contact@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 212 638 397 172</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4">
+    © 2022 Copyright:
+    <a class="text-reset fw-bold" href="http://opensource-porbet.ga/">opensource-porbet.ga</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+  </body>
+</html>

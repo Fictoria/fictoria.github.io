@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fictoria | Produit</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" href="images/logo2.png">
+  </head>
+<body >
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top p-3" style="background-color: white; box-shadow: 5px 0px 10px -5px gray;" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/logo3.png" width="150px" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <form class="nav-item" action="index.html" id="form">
+                <a onclick="submitForm()" class="nav-link" aria-current="page" >Acceuil</a>
+              </form>
+              <script>
+                function submitForm(){
+                    var form = document.getElementById("form");
+                    form.submit();
+                }
+                </script>
+                <form class="nav-item" action="contact.html" id="form1">
+                  <a onclick="submitForm1()" class="nav-link" aria-current="page" >Contactez-nous</a>
+                </form>
+                <script>
+                  function submitForm1(){
+                      var form = document.getElementById("form1");
+                      form.submit();
+                  }
+                  </script>
+              <form class="nav-item" action="walet.html" id="form2">
+                <a onclick="submitForm2()" class="nav-link" >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                  </svg> Porte monnaie
+                </a>
+              </form>
+              <script>
+                function submitForm2(){
+                    var form = document.getElementById("form2");
+                    form.submit();
+                }
+                </script>
+              
+          </div>
+        </div>
+      </nav>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+<div align="center">
+       
+        <div id="product" style="display: inline-block;transform: translateY(-2%);" class="p-2">
+          <div>
+            <img src="" id="img" width="300px"/>
+            <hr>
+            <img src="" id="img1" width="50px" class="m-2"  /><img src="" id="img2" width="50px" class="m-2"  /><img src="" id="img3" width="50px" class="m-2" /><img src="" id="img4" width="50px" class="m-2" /><img src="" id="img5" width="50px" class="m-2" />
+          </div>
+        </div>
+        <div id="product2" style="display: inline-block; transform: translateY(-4%);" class="p-2">
+          <br>
+          <h5 id="desp"></h5>
+          <hr>
+          <strong class="text-black" style="font-size: 25px;" id="now"></strong>
+          <span style="color: red;" id="last" ></span>
+          <br>
+          <br>
+          + livraison à partir de 8.40 Dhs vers CASABLANCA - Anfa
+          <br>
+          <br>
+          <div class="form-floating">
+            <input class="form-control" id="floatingInput">
+            <label for="floatingInput">Description (Couleur/Taille...)</label>
+          </div>
+          <br>
+          <br>
+            <span class="m-3" id="+" style="user-select: none; cursor: pointer;">+</span>
+            <span class="m-3" id="quantity" style="font-weight: bold;">1</span>
+            <span class="m-3" id="-" style="user-select: none; cursor: pointer;">-</span>
+          <br>
+          <br>
+          <form action="walet.html" id="form">
+            <div align="center">
+              <button type="button" class="btn1"  id="checkout">Vérifier</button>
+            </div>
+          </form>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="walet"></div>
+      
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted p-3">
+
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Porbet
+          </h6>
+          <p>
+            Porbet , a company that makes something out of nothing
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="https://cytocyber.github.io" class="text-reset">Cytocyber</a>
+          </p>
+          <p>
+            <a href="https://expense.github.io" class="text-reset">Expense</a>
+          </p>
+          <p>
+            <a href="https://porbet.github.io/store/todo.html" class="text-reset">Porbet keep</a>
+          </p>
+          <p>
+            <a href="https://porbet.github.io/store/keep.html" class="text-reset">Porbet todo</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="index.html" class="text-reset">Home</a>
+          </p>
+          <p>
+            <a href="https://porbet.github.io/store/" class="text-reset">Store</a>
+          </p>
+          <p>
+            <a href="contact.html" class="text-reset">Contact</a>
+          </p>
+          <p>
+            <a href="privacy.html" class="text-reset">Privacy</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contact
+          </h6>
+          <p><i class="fas fa-home me-3"></i> Nador, Morocco</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            porbet.contact@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 212 638 397 172</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4">
+    © 2022 Copyright:
+    <a class="text-reset fw-bold" href="http://opensource-porbet.ga/">opensource-porbet.ga</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+      <script>
+
+        document.getElementById("+").addEventListener("click",function(){
+          if(document.getElementById("quantity").textContent  == localStorage.getItem("max")){
+            alert("Désolé, vous avez atteint le maximum")
+          } else {
+            document.getElementById("quantity").innerText = Number(document.getElementById("quantity").innerText) + 1;
+            
+          }
+        })
+        document.getElementById("-").addEventListener("click",function(){
+          if(document.getElementById("quantity").textContent  == "1"){
+            alert("Désolé, vous avez atteint le min")
+          } else {
+            document.getElementById("quantity").innerText = Number(document.getElementById("quantity").innerText) -1;
+          }
+        })
+
+        //setup product
+          document.getElementById("img").src = localStorage.getItem("w")
+          document.getElementById("img1").src = localStorage.getItem("w")
+          document.getElementById("img2").src = localStorage.getItem("w2")
+          document.getElementById("img3").src = localStorage.getItem("w3")
+          document.getElementById("img4").src = localStorage.getItem("w4")
+          document.getElementById("img5").src = localStorage.getItem("w5")
+          document.getElementById("desp").innerHTML = localStorage.getItem("x") 
+          document.getElementById("now").innerHTML = localStorage.getItem("y") + " Dhs"
+          document.getElementById("last").innerHTML = localStorage.getItem("z") + " Dhs"
+        //ifs
+        
+
+
+        //setup images click
+        document.getElementById("img1").addEventListener("click",function(){
+          document.getElementById("img").src = document.getElementById("img1").src
+        })
+        document.getElementById("img2").addEventListener("click",function(){
+          document.getElementById("img").src = document.getElementById("img2").src
+        })
+        document.getElementById("img3").addEventListener("click",function(){
+          document.getElementById("img").src = document.getElementById("img3").src
+        })
+        document.getElementById("img4").addEventListener("click",function(){
+          document.getElementById("img").src = document.getElementById("img4").src
+        })
+        document.getElementById("img5").addEventListener("click",function(){
+          document.getElementById("img").src = document.getElementById("img5").src
+        })
+
+
+          document.getElementById("checkout").addEventListener("click",function(){
+
+            if(document.getElementById("floatingInput").value.length =""){
+                alert("Désolé , la description est vide!")
+            } else {
+                document.getElementById("form").submit();
+                window.location.href = "walet.html";
+                let walet = localStorage.getItem("walet");
+                if(walet == null){
+                  waletObj = [];
+                } else{
+                  waletObj = JSON.parse(walet);
+                }
+                let myObj = {
+                  product : localStorage.getItem("x"),
+                  img : localStorage.getItem("w"),
+                  price : localStorage.getItem("y"),
+                  quantity : document.getElementById("quantity").innerText,
+                  description : document.getElementById("floatingInput").value
+                }
+                waletObj.push(myObj);
+                localStorage.setItem("walet", JSON.stringify(waletObj))
+            }
+            
+          })
+
+                  
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
